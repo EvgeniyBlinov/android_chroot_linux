@@ -17,6 +17,12 @@ From command line:
 su -c sh /sdcard/.bin/bootscript.sh -i /sdcard/ubuntu/ubuntu-13.10.SMALL.ext2.img
 ```
 
+From command line with config:
+```sh
+echo 'imgfile=/sdcard/ubuntu/ubuntu-13.10.SMALL.ext2.img' > /sdcard/.bin/.config
+su -c sh /sdcard/.bin/bootscript.sh
+```
+
 From adb:
 ```sh
 adb shell su -c sh /sdcard/.bin/bootscript.sh -i /sdcard/ubuntu/ubuntu-13.10.SMALL.ext2.img
